@@ -28,10 +28,9 @@ class App extends Component {
         })
       })
     } catch (error) {
-      console.log('there was an error', error)
+        console.log(error)
     }
   }
-
   render() {
     const { libraryItems } = this.state
     return (

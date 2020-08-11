@@ -5,7 +5,9 @@ function LibraryItem({ item }) {
   const { imageUrl, name, type, createdAt } = item
   return (
     <li className="libraryItem">
-      <img src={imageUrl} alt={type}/>
+      <div className="image">
+        <img src={imageUrl} alt={type}/>
+      </div>
       <div className="libraryItem-description">
         <p className="title">{name}</p>
         <p className="subtitle">{createdAt}</p>
